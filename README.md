@@ -1,1 +1,2 @@
-# angular-exercises-santander-coders-2021-
+# Angular exercises
+Angular exercises from module 2 of the Santander Coders 2021 program.
