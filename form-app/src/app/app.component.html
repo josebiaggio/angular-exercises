@@ -1,0 +1,21 @@
+<form [formGroup]="form">
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Nome</mat-label>
+    <input matInput type="text" formControlName="name" placeholder="Digite seu nome" autocomplete="off">
+  </mat-form-field>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Cidade</mat-label>
+    <input matInput type="text" formControlName="city" placeholder="Digite sua cidade" autocomplete="off">
+  </mat-form-field>
+
+  <mat-checkbox class="add-hobbies" formControlName="hobbie" [(ngModel)]="isChecked">
+    Deseja informar alguns hobbies?
+  </mat-checkbox>
+
+  <app-hobbies [thereAreHobbies]="isChecked"></app-hobbies>
+
+  <button mat-button [disabled]="form.invalid">Enviar</button>
+
+</form>

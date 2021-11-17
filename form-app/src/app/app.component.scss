@@ -1,0 +1,57 @@
+.ng-invalid:not(form) {
+  border-bottom-color: red;
+}
+
+form {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+mat-form-field {
+width: 100%;
+}
+
+mat-label {
+font-size: large;
+}
+
+input {
+padding: 5px;
+font-size: large;
+color: #E0E0E0;
+}
+
+.add-hobbies {
+color: gray;
+font-size: medium;
+width: 100%;
+padding: 20px 0;
+}
+
+app-hobbies {
+display: flex;
+width: 100%;
+}
+
+.mat-button {
+background-color: #1976D2;
+color: white;
+font-size: medium;
+}
+
+.mat-button:hover {
+background-color: #BBDEFB;
+color: #0D47A1;
+}
+
+.mat-button.mat-button-disabled {
+background-color: #BDBDBD;
+color: #757575;
+}
